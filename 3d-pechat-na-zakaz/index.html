@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Печать изделий на 3D-принтере из PLA. Можно выбрать готовую модель из каталога или прислать свой файл, ссылку, фото и размеры.">
+<title>3D-печать на заказ из PLA по вашей модели | B3DPrint</title>
+<link rel="canonical" href="https://gentle-chebakia-812269.netlify.app/3d-pechat-na-zakaz/">
+<style>
+:root{--text:#202633;--muted:#697386;--line:#e7e9ee;--orange:#ff6f1d;--soft:#fff6ec}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:#fbfbfc;color:var(--text);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+a{color:inherit}.wrap{width:min(1160px,calc(100% - 34px));margin:0 auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900}
+.logo{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:var(--orange);color:#fff}
+.navlinks{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.navlinks a{text-decoration:none;font-weight:750;font-size:14px;color:#525c6d}
+.navlinks a:hover{color:var(--orange)}
+.hero{padding:66px 0 32px}.kicker{font-size:13px;font-weight:900;letter-spacing:.08em;color:var(--orange);text-transform:uppercase}
+h1{font-size:clamp(38px,6vw,66px);line-height:1.02;letter-spacing:-2.4px;margin:10px 0 16px}
+.lead{font-size:18px;line-height:1.65;color:var(--muted);max-width:820px;margin:0}
+.breadcrumbs{display:flex;gap:8px;flex-wrap:wrap;font-size:13px;color:#7c8492;margin-bottom:18px}
+.breadcrumbs a{text-decoration:none}.breadcrumbs a:hover{color:var(--orange)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:22px 0 70px}
+.card{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:0 12px 34px rgba(32,42,60,.06);display:flex;flex-direction:column}
+.card-img{aspect-ratio:1/1;background:#f1f2f4;overflow:hidden}
+.card-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .2s ease}.card:hover .card-img img{transform:scale(1.025)}
+.card-body{padding:18px;display:flex;flex-direction:column;gap:12px;flex:1}.card h2{font-size:20px;margin:0;line-height:1.2}
+.price{font-size:22px;font-weight:900}.card-actions{display:flex;gap:9px;margin-top:auto;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:13px;text-decoration:none;font-weight:850;border:1px solid var(--line);background:#fff}
+.btn.primary{background:var(--orange);border-color:var(--orange);color:#fff}.btn:hover{transform:translateY(-1px)}
+.info-box{margin:10px 0 58px;padding:22px;border-radius:22px;background:var(--soft);border:1px solid #f0d9c3;color:#5f6878;line-height:1.6}
+footer{padding:28px 0 42px;color:#8a92a0;font-size:13px;border-top:1px solid var(--line)}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}}
+@media(max-width:560px){.wrap{width:min(100% - 28px,1160px)}.grid{grid-template-columns:1fr}.hero{padding-top:42px}h1{letter-spacing:-1.5px}}
+
+.service-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;padding:12px 0 68px}
+.service-card{background:#fff;border:1px solid var(--line);border-radius:26px;padding:28px;box-shadow:0 12px 34px rgba(32,42,60,.06)}
+.service-card h2{margin:0 0 12px;font-size:28px}.service-card p{color:var(--muted);line-height:1.7}
+.steps{display:grid;gap:12px;margin-top:20px}.step{padding:16px;border-radius:16px;background:#f7f8fa;line-height:1.55}
+@media(max-width:760px){.service-grid{grid-template-columns:1fr}}
+
+.search-intents{padding:0 0 68px}.search-intents h2{font-size:30px;margin:0 0 16px}
+.intent-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.intent-card{display:block;background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px;text-decoration:none;box-shadow:0 8px 24px rgba(32,42,60,.04)}
+.intent-card:hover{border-color:#ffc79f;transform:translateY(-1px)}.intent-card b{display:block;font-size:18px;margin-bottom:6px}.intent-card span{color:var(--muted);line-height:1.5;font-size:14px}
+@media(max-width:700px){.intent-grid{grid-template-columns:1fr}}
+
+</style></head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="../index.html"><span class="logo">3D</span><span>Печать на заказ</span></a>
+<nav class="navlinks"><a href="../catalog.html">Каталог</a><a href="../igrushki/">Игрушки</a><a href="../dlya-doma/">Для дома</a></nav></div></header>
+<main>
+<section class="hero"><div class="wrap">
+<div class="breadcrumbs"><a href="../index.html">Главная</a><span>→</span><span>3D-печать на заказ</span></div>
+<div class="kicker">B3DPrint</div><h1>3D-печать на заказ</h1>
+<p class="lead">Можно выбрать готовую модель из каталога или прислать свою идею, картинку либо готовый файл модели. Печать выполняется из PLA-пластика.</p>
+</div></section>
+<div class="wrap service-grid">
+<section class="service-card"><h2>Как заказать</h2><div class="steps">
+<div class="step"><b>1. Пришлите модель или идею.</b><br>Можно отправить готовый файл, ссылку на модель, картинку или описание.</div>
+<div class="step"><b>2. Согласуем изделие.</b><br>Уточним цвет, размер и другие детали перед печатью.</div>
+<div class="step"><b>3. Печать.</b><br>После согласования модель печатается на 3D-принтере.</div>
+</div></section>
+<aside class="service-card"><h2>Что можно напечатать</h2>
+<p>Игрушки, фигурки, органайзеры, держатели, небольшие полезные детали и другие изделия, подходящие для 3D-печати.</p>
+<div class="card-actions"><a class="btn primary" href="../order.html">Оформить заказ</a><a class="btn" href="../catalog.html">Смотреть каталог</a></div>
+</aside>
+</div>
+<section class="wrap search-intents">
+<h2>Популярные варианты заказа</h2>
+<div class="intent-grid">
+<a class="intent-card" href="../3d-pechat-igrushek-na-zakaz/"><b>3D-печать игрушек на заказ</b><span>Гибкие игрушки, антистрессы, фигурки и другие модели из PLA.</span></a>
+<a class="intent-card" href="../3d-pechat-po-svoey-modeli/"><b>Печать по своей 3D-модели</b><span>Если уже есть готовый файл STL, 3MF или ссылка на модель.</span></a>
+<a class="intent-card" href="../3d-pechat-po-foto-i-razmeram/"><b>Печать по фото и размерам</b><span>Для простой детали, когда готового файла ещё нет.</span></a>
+<a class="intent-card" href="../3d-pechat-organayzerov-na-zakaz/"><b>Органайзеры на заказ</b><span>Органайзеры, держатели и подставки для домашних задач.</span></a>
+</div></section>
+
+</main>
+<footer><div class="wrap">B3DPrint · Печать на заказ на 3D-принтере</div></footer>
+
+<script>
+(function () {
+  if (window.location.protocol !== 'file:') return;
+  document.querySelectorAll('a[href]').forEach(function (link) {
+    var href = link.getAttribute('href');
+    if (!href) return;
+    if (/^(https?:|mailto:|tel:|#|javascript:)/i.test(href)) return;
+
+    var hash = '';
+    var query = '';
+    var base = href;
+
+    var hashPos = base.indexOf('#');
+    if (hashPos !== -1) {
+      hash = base.slice(hashPos);
+      base = base.slice(0, hashPos);
+    }
+    var queryPos = base.indexOf('?');
+    if (queryPos !== -1) {
+      query = base.slice(queryPos);
+      base = base.slice(0, queryPos);
+    }
+
+    if (base.endsWith('/')) {
+      link.setAttribute('href', base + 'index.html' + query + hash);
+    }
+  });
+})();
+</script>
+
+</body></html>

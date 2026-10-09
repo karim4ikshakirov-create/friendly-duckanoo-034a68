@@ -1,0 +1,1192 @@
+<!-- home-build-v59-real-pla-colors -->
+<!-- home-build-v58-review-photo -->
+<!-- home-build-v55-find-your-model -->
+<!-- home-build-v54-new-items -->
+<!-- home-build-v53-back-to-top -->
+<!-- home-build-v52-quick-modeling-after-catalog -->
+<!-- home-build-v50-real-reviews -->
+<!-- home-build-v49-new-work-examples -->
+<!-- home-build-v48-catalog-first -->
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta name="description" content="3D-печать на заказ из PLA: игрушки, фигурки, органайзеры и полезные детали. Выберите готовую модель из каталога или пришлите свою.">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>3D-печать на заказ — игрушки и детали из PLA | B3DPrint</title>
+<link rel="canonical" href="https://gentle-chebakia-812269.netlify.app/">
+<style>
+:root{
+  --bg:#f7f7f4;
+  --surface:#ffffff;
+  --surface2:#fff7ef;
+  --text:#1e2430;
+  --muted:#687083;
+  --accent:#ff7a21;
+  --accent2:#ff9c5c;
+  --blue:#3d72f2;
+  --line:#e7e8ec;
+  --shadow:0 18px 50px rgba(32,42,60,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  background:
+    radial-gradient(circle at 8% 0%, rgba(255,122,33,.10), transparent 24%),
+    radial-gradient(circle at 100% 10%, rgba(61,114,242,.08), transparent 22%),
+    var(--bg);
+  color:var(--text);
+  line-height:1.5;
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+
+header{
+  position:sticky;top:0;z-index:20;
+  background:rgba(255,255,255,.86);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(30,36,48,.08);
+}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:850}
+.logo{
+  width:42px;height:42px;border-radius:14px;
+  background:linear-gradient(145deg,var(--accent),#ffb36f);
+  display:grid;place-items:center;color:white;font-weight:900;
+  box-shadow:0 10px 25px rgba(255,122,33,.28)
+}
+nav{display:flex;gap:20px;font-size:14px;color:#4f586b}
+nav a:hover{color:var(--accent)}
+.cta{
+  display:inline-flex;align-items:center;justify-content:center;
+  border:0;border-radius:14px;padding:13px 18px;
+  background:linear-gradient(135deg,var(--accent),#ff984f);
+  color:#fff;font-weight:800;cursor:pointer;
+  box-shadow:0 9px 22px rgba(255,122,33,.20);
+  transition:.2s;
+}
+.cta:hover{transform:translateY(-2px)}
+.ghost{
+  background:#fff;color:var(--text);border:1px solid var(--line);
+  box-shadow:none
+}
+
+.hero{padding:76px 0 54px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center}
+.kicker{
+  display:inline-flex;gap:9px;align-items:center;
+  background:#fff;border:1px solid var(--line);
+  border-radius:999px;padding:9px 13px;color:#535c6e;font-size:14px;
+  box-shadow:0 8px 22px rgba(40,46,62,.06)
+}
+.dot{width:9px;height:9px;border-radius:50%;background:#35bf73;box-shadow:0 0 0 5px rgba(53,191,115,.12)}
+h1{
+  font-size:clamp(42px,6vw,74px);
+  line-height:1.02;margin:18px 0 18px;letter-spacing:-3px
+}
+h1 span{
+  background:linear-gradient(135deg,var(--accent),#ff9b4f);
+  -webkit-background-clip:text;background-clip:text;color:transparent
+}
+.lead{font-size:19px;color:var(--muted);max-width:700px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+
+.hero-card{
+  background:linear-gradient(145deg,#fff,#fff7ef);
+  border:1px solid #ece7e1;border-radius:28px;padding:16px;
+  box-shadow:var(--shadow);transform:rotate(1deg)
+}
+.hero-card img{
+  width:100%;display:block;border-radius:20px;aspect-ratio:4/3;object-fit:cover
+}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.badge{
+  font-size:13px;padding:8px 11px;border-radius:999px;
+  background:#fff;border:1px solid var(--line);color:#4e5666
+}
+
+section{padding:58px 0}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:24px}
+h2{font-size:clamp(31px,4vw,48px);margin:0;letter-spacing:-1.5px}
+.sub{color:var(--muted);max-width:720px;margin:8px 0 0}
+
+.choice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.choice{
+  min-height:230px;background:#fff;border:1px solid var(--line);
+  border-radius:24px;padding:24px;display:flex;flex-direction:column;justify-content:space-between;
+  box-shadow:0 10px 35px rgba(39,45,63,.06);transition:.2s
+}
+.choice:nth-child(1){background:linear-gradient(145deg,#fff8f2,#fff)}
+.choice:nth-child(2){background:linear-gradient(145deg,#f5f8ff,#fff)}
+.choice:nth-child(3){background:linear-gradient(145deg,#f6fff9,#fff)}
+.choice:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.icon{
+  width:54px;height:54px;border-radius:16px;background:#fff;
+  display:grid;place-items:center;font-size:31px;border:1px solid var(--line)
+}
+.choice h3{margin:18px 0 8px;font-size:23px}
+.choice p{margin:0;color:var(--muted)}
+.choice strong{color:var(--accent)}
+
+.catalog-banner{
+  background:#fff;border:1px solid var(--line);border-radius:26px;overflow:hidden;
+  box-shadow:var(--shadow)
+}
+.catalog-banner img{display:block;width:100%;max-height:680px;object-fit:cover}
+.toys{display:flex;gap:10px;flex-wrap:wrap;padding:20px}
+.toy{
+  padding:9px 12px;border-radius:12px;background:#fafafa;
+  border:1px solid var(--line);color:#424b5d;font-size:14px
+}
+
+
+.portfolio{
+  display:grid;
+  grid-template-columns:1.25fr .75fr;
+  grid-template-areas:
+    "hero side1"
+    "hero side2"
+    "wide wide";
+  gap:18px
+}
+.photo{
+  position:relative;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:26px;
+  overflow:hidden;
+  box-shadow:0 14px 38px rgba(39,45,63,.08);
+  min-height:280px;
+  transition:.25s
+}
+.photo:hover{transform:translateY(-4px);box-shadow:0 22px 55px rgba(39,45,63,.13)}
+.photo:nth-child(1){grid-area:hero}
+.photo:nth-child(2){grid-area:side1}
+.photo:nth-child(3){grid-area:side2}
+.photo:nth-child(4){grid-area:wide}
+.photo img{transition:transform .35s ease;
+  display:block;
+  width:100%;
+  height:100%;
+  min-height:280px;
+  object-fit:cover
+}
+.photo:nth-child(1) img{min-height:620px}
+.photo:nth-child(4) img{min-height:360px}
+.photo .cap{
+  position:absolute;
+  left:16px;
+  right:16px;
+  bottom:16px;
+  padding:14px 15px;
+  color:#fff;
+  background:rgba(24,28,36,.70);
+  backdrop-filter:blur(9px);
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:16px;
+  box-shadow:0 8px 20px rgba(0,0,0,.18)
+}
+.photo .cap b{display:block;color:#fff;font-size:18px;margin-bottom:3px}
+.photo .cap br{display:none}
+
+
+.videos{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.videos-three{grid-template-columns:repeat(3,1fr)}
+.video-card{transition:transform .25s ease,box-shadow .25s ease;
+  background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;
+  box-shadow:0 10px 30px rgba(39,45,63,.07)
+}
+.video-card video{display:block;width:100%;background:#111;aspect-ratio:16/9;object-fit:cover}.video-card:hover{transform:translateY(-5px);box-shadow:0 20px 45px rgba(31,42,58,.16)}
+.video-card div{padding:15px 17px;color:#596274}
+
+.material{
+  display:flex;align-items:center;justify-content:space-between;gap:22px;
+  background:linear-gradient(135deg,#fff3e7,#f8fbff);
+  border:1px solid #eee1d4;border-radius:26px;padding:28px;
+  box-shadow:0 10px 30px rgba(39,45,63,.05)
+}
+.material b{font-size:25px}
+.material p{margin:6px 0 0;color:var(--muted)}
+.pla-explain{
+  margin-top:16px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px
+}
+.pla-card{
+  background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px;
+  box-shadow:0 8px 24px rgba(39,45,63,.05)
+}
+.pla-icon{
+  width:44px;height:44px;border-radius:14px;display:grid;place-items:center;
+  font-size:23px;background:linear-gradient(135deg,#fff2e7,#f4f8ff);margin-bottom:13px
+}
+.pla-card h3{margin:0 0 8px;font-size:18px}
+.pla-card p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}
+.pla-note{
+  margin-top:14px;padding:14px 17px;border-radius:17px;background:#fff8f1;
+  border:1px solid #f1dcc8;color:#6d5a48;font-size:14px;line-height:1.55
+}
+
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:step}
+.step{
+  background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px;
+  box-shadow:0 8px 24px rgba(39,45,63,.05)
+}
+.step::before{
+  counter-increment:step;content:counter(step);
+  display:grid;place-items:center;width:40px;height:40px;border-radius:13px;
+  background:linear-gradient(135deg,var(--accent),#ff9c5c);
+  color:#fff;font-weight:900;margin-bottom:16px
+}
+.step h3{margin:0 0 8px}
+.step p{margin:0;color:var(--muted);font-size:14px}
+
+.contact{
+  background:
+    radial-gradient(circle at 0% 0%,rgba(255,255,255,.18),transparent 25%),
+    linear-gradient(135deg,#ff7a21,#ff9d5f);
+  color:#fff;border-radius:30px;padding:38px;
+  display:flex;justify-content:space-between;gap:25px;align-items:center;
+  box-shadow:0 20px 55px rgba(255,122,33,.25)
+}
+.contact h2{margin-bottom:8px}
+.contact p{margin:0;opacity:.95}
+.contact .cta{
+  background:#fff;color:#1e2430;
+  box-shadow:0 7px 20px rgba(0,0,0,.08)
+}
+
+footer{padding:34px 0 50px;color:#8991a0;font-size:13px}
+
+@media(max-width:860px){
+  nav{display:none}
+  .hero{padding-top:48px}
+  .hero-grid{grid-template-columns:1fr}
+  .choice-grid,.steps{grid-template-columns:1fr 1fr}
+  .pla-explain{grid-template-columns:1fr}
+  .portfolio,.videos,.videos-three{grid-template-columns:1fr}.portfolio{grid-template-areas:'hero' 'side1' 'side2' 'wide'}.photo:nth-child(1) img,.photo:nth-child(4) img{min-height:auto}
+  .photo img{transition:transform .35s ease;height:auto}
+  .contact{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:560px){
+  .wrap{padding:0 15px}
+  .nav{height:64px}
+  .brand span:last-child{font-size:14px}
+  h1{letter-spacing:-1.8px}
+  .choice-grid,.steps{grid-template-columns:1fr}
+  .hero-card{border-radius:20px;transform:none}
+  section{padding:44px 0}
+  .contact{padding:25px}
+  .material{align-items:flex-start;flex-direction:column}
+}
+.photo{transition:transform .25s ease,box-shadow .25s ease}.photo:hover{transform:translateY(-5px)}.photo:hover img{transform:scale(1.035)}
+
+/* Настоящие отзывы */
+.reviews-shell{display:grid;grid-template-columns:.92fr 1.08fr;gap:22px;align-items:start}
+.review-form-card,.reviews-list-card{background:#fff;border:1px solid var(--line);border-radius:26px;padding:24px;box-shadow:0 10px 30px rgba(39,45,63,.06)}
+.review-form-card h3,.reviews-list-card h3{margin:0 0 7px;font-size:22px}.review-help{margin:0 0 18px;color:var(--muted);font-size:14px;line-height:1.55}
+.review-form{display:grid;gap:14px}.review-field{display:grid;gap:7px}.review-field label,.rating-label{font-size:13px;font-weight:800;color:#4d5668}
+.review-field input,.review-field textarea{width:100%;box-sizing:border-box;border:1px solid #dfe3ea;border-radius:14px;padding:13px 14px;font:inherit;color:var(--text);background:#fbfcfe;outline:none;transition:border .2s,box-shadow .2s}
+.review-field textarea{min-height:118px;resize:vertical}.review-field input:focus,.review-field textarea:focus{border-color:#ff9b5d;box-shadow:0 0 0 4px rgba(255,122,33,.09)}
+.rating-input{display:flex;flex-direction:row-reverse;justify-content:flex-end;gap:4px;width:max-content}.rating-input input{position:absolute;opacity:0;pointer-events:none}.rating-input label{font-size:31px;line-height:1;color:#d9dde5;cursor:pointer;transition:transform .15s,color .15s}.rating-input label:hover{transform:scale(1.08)}.rating-input label:hover,.rating-input label:hover~label,.rating-input input:checked~label{color:#ff9a45}
+.review-submit{border:0;cursor:pointer;font:inherit}.review-submit[disabled]{opacity:.6;cursor:wait}.review-status{min-height:20px;font-size:13px;color:var(--muted)}.review-status.ok{color:#27814b}.review-status.err{color:#b63d35}
+.review-honeypot{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;overflow:hidden!important}
+.reviews-summary{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-bottom:16px;border-bottom:1px solid var(--line);margin-bottom:8px}.reviews-score{font-size:30px;font-weight:900;letter-spacing:-1px}.reviews-score small{font-size:13px;color:var(--muted);font-weight:700;letter-spacing:0}.reviews-stars{color:#ff9a45;letter-spacing:2px;font-size:18px}
+.reviews-list{display:grid}.review-item{padding:18px 0;border-bottom:1px solid var(--line)}.review-item:last-child{border-bottom:0}.review-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.review-name{font-weight:900}.review-date{font-size:12px;color:#9299a7;white-space:nowrap}.review-product{display:inline-block;margin-top:6px;padding:5px 9px;border-radius:999px;background:#f5f6f8;color:#687183;font-size:12px}.review-text{margin:10px 0 0;color:#4f5868;line-height:1.6;font-size:14px;white-space:pre-wrap;overflow-wrap:anywhere}.review-empty{padding:28px 5px 10px;text-align:center;color:var(--muted);line-height:1.55}.review-loading{padding:24px 0;color:var(--muted);font-size:14px}
+@media(max-width:860px){.reviews-shell{grid-template-columns:1fr}}
+
+
+.quick-modeling{padding:0 0 26px}
+.quick-modeling-card{
+  display:flex;align-items:flex-start;gap:16px;
+  padding:22px 24px;border:1px solid #e4e7ec;border-radius:22px;
+  background:#fff;box-shadow:0 12px 34px rgba(17,24,39,.06)
+}
+.quick-modeling-icon{
+  flex:0 0 44px;width:44px;height:44px;border-radius:14px;
+  display:flex;align-items:center;justify-content:center;
+  background:#fff2e8;font-size:23px
+}
+.quick-modeling-card h2{margin:0 0 7px;font-size:22px;line-height:1.25}
+.quick-modeling-card p{margin:0;color:#667085;font-size:16px;line-height:1.6}
+.quick-modeling-card b{color:#1f2937}
+@media(max-width:640px){
+  .quick-modeling-card{padding:18px;gap:12px}
+  .quick-modeling-icon{flex-basis:40px;width:40px;height:40px}
+  .quick-modeling-card h2{font-size:19px}
+  .quick-modeling-card p{font-size:15px}
+}
+
+
+.back-to-top{
+  position:fixed;
+  left:50%;right:auto;
+  bottom:22px;
+  z-index:999;
+  width:52px;
+  height:52px;
+  border:0;
+  border-radius:50%;
+  background:#ff8a34;
+  color:#fff;
+  font-size:30px;
+  line-height:1;
+  font-weight:700;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 10px 28px rgba(0,0,0,.18);
+  opacity:0;
+  visibility:hidden;
+  transform:translate(-50%, 10px);
+  transition:opacity .2s ease, transform .2s ease, visibility .2s ease, background .2s ease;
+}
+.back-to-top.is-visible{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+}
+.back-to-top:hover{background:#f47b22}
+.back-to-top:active{transform:scale(.94)}
+@media(max-width:640px){
+  .back-to-top{
+    left:50%;right:auto;
+    bottom:14px;
+    width:48px;
+    height:48px;
+    font-size:28px;
+  }
+}
+
+
+#new-items{scroll-margin-top:82px}
+.new-items-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:18px;
+}
+.new-item-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(39,45,63,.06);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.new-item-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.new-item-image{aspect-ratio:4/3;background:#f3f3f1;overflow:hidden}
+.new-item-image img{width:100%;height:100%;display:block;object-fit:cover}
+.new-item-body{padding:16px}
+.new-item-date{
+  display:inline-flex;
+  align-items:center;
+  padding:6px 9px;
+  border-radius:999px;
+  background:#fff2e8;
+  color:#d95f0d;
+  font-size:12px;
+  font-weight:800;
+}
+.new-item-body h3{font-size:18px;line-height:1.25;margin:11px 0 14px}
+.new-item-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.new-item-bottom strong{font-size:18px}
+.new-item-bottom span{font-size:13px;color:var(--accent);font-weight:800}
+.new-items-empty{
+  padding:22px;
+  border:1px dashed #d9dce3;
+  border-radius:18px;
+  background:#fff;
+  color:var(--muted);
+}
+@media(max-width:950px){.new-items-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){
+  .new-items-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .new-item-body{padding:12px}
+  .new-item-body h3{font-size:15px}
+  .new-item-bottom strong{font-size:16px}
+  .new-item-bottom span{display:none}
+  .new-item-date{font-size:11px;padding:5px 7px}
+}
+
+
+.find-model{padding:0 0 28px}
+.find-model-card{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:26px;
+  padding:28px 30px;
+  border-radius:24px;
+  background:linear-gradient(135deg,#fff7ef,#fff);
+  border:1px solid #f0dfd1;
+  box-shadow:0 12px 34px rgba(17,24,39,.06);
+}
+.find-model-copy{max-width:760px}
+.find-model-kicker{
+  margin-bottom:7px;
+  color:#ff7a22;
+  font-size:14px;
+  font-weight:850;
+}
+.find-model-card h2{margin:0 0 8px;font-size:26px;line-height:1.2}
+.find-model-card p{margin:0;color:#667085;font-size:16px;line-height:1.6}
+.find-model-btn{
+  flex:0 0 auto;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:50px;
+  padding:0 20px;
+  border-radius:15px;
+  background:#ff8734;
+  color:#fff !important;
+  font-weight:850;
+  box-shadow:0 9px 22px rgba(255,135,52,.22);
+  transition:transform .2s ease, background .2s ease;
+}
+.find-model-btn:hover{background:#f57922;transform:translateY(-2px)}
+@media(max-width:720px){
+  .find-model-card{display:block;padding:22px}
+  .find-model-card h2{font-size:22px}
+  .find-model-btn{margin-top:18px;width:100%}
+}
+
+
+.review-optional{font-weight:400;color:#8a91a1}
+.review-photo-field input[type="file"]{
+  padding:10px;background:#fbfcfe;cursor:pointer
+}
+.review-photo-field input[type="file"]::file-selector-button{
+  border:0;border-radius:10px;padding:9px 12px;margin-right:10px;
+  background:#fff0e5;color:#d86112;font:inherit;font-weight:800;cursor:pointer
+}
+.review-photo-help{font-size:12px;color:#8a91a1;line-height:1.45}
+.review-photo-preview{
+  display:flex;align-items:center;gap:12px;padding:10px;
+  border:1px solid #e4e7ec;border-radius:14px;background:#fff
+}
+.review-photo-preview[hidden]{display:none}
+.review-photo-preview img{
+  width:82px;height:82px;object-fit:cover;border-radius:11px;background:#f3f4f6
+}
+.review-photo-preview button{
+  border:0;background:none;color:#d86112;font:inherit;font-weight:800;cursor:pointer;padding:8px
+}
+.review-photo{
+  display:block;margin-top:12px;width:min(100%,520px);max-height:420px;
+  object-fit:cover;border-radius:16px;border:1px solid #e5e7eb;background:#f4f5f7;
+  cursor:zoom-in
+}
+
+
+.pla-colors{padding:34px 0 24px}
+.pla-colors-head{
+  display:flex;justify-content:space-between;align-items:flex-end;gap:28px;margin-bottom:22px
+}
+.pla-colors-kicker{
+  color:#ff7a22;font-size:14px;font-weight:850;text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px
+}
+.pla-colors h2{margin:0 0 8px;font-size:34px;line-height:1.15}
+.pla-colors-head p{margin:0;max-width:720px;color:#667085;font-size:16px;line-height:1.6}
+.pla-colors-note{
+  flex:0 0 280px;padding:12px 14px;border-radius:14px;background:#fff7ef;
+  color:#8a5a36;font-size:13px;line-height:1.45
+}
+.pla-colors-grid{
+  display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px
+}
+.pla-color-card{
+  padding:9px 9px 11px;border:1px solid #e8eaee;border-radius:18px;background:#fff;
+  box-shadow:0 7px 22px rgba(17,24,39,.045)
+}
+.pla-color-photo{
+  aspect-ratio:1/1;overflow:hidden;border-radius:13px;background:#f3f4f6
+}
+.pla-color-photo img{display:block;width:100%;height:100%;object-fit:cover}
+.pla-color-name{
+  padding:10px 3px 1px;text-align:center;font-size:14px;font-weight:800;color:#202633
+}
+@media(max-width:900px){
+  .pla-colors-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .pla-colors-head{align-items:flex-start}
+}
+@media(max-width:680px){
+  .pla-colors{padding:24px 0 18px}
+  .pla-colors-head{display:block}
+  .pla-colors h2{font-size:28px}
+  .pla-colors-note{margin-top:14px}
+  .pla-colors-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+  .pla-color-card{padding:7px 7px 9px;border-radius:15px}
+  .pla-color-photo{border-radius:11px}
+  .pla-color-name{font-size:12px}
+}
+
+
+.video-card-live{overflow:hidden;padding:0;background:#fff}
+.video-card-live video{
+  display:block;width:100%;aspect-ratio:9/16;max-height:520px;
+  object-fit:cover;background:#111
+}
+.video-caption{display:flex;flex-direction:column;gap:4px;padding:14px 16px 16px}
+.video-caption b{font-size:15px}
+.video-caption span{font-size:13px;color:#7a8292}
+@media(max-width:760px){
+  .videos-three{grid-template-columns:1fr}
+  .video-card-live video{aspect-ratio:9/16;max-height:620px}
+}
+
+
+.pla-color-card{display:block;text-decoration:none;color:inherit;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease}
+.pla-color-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(17,24,39,.10)}
+
+
+.photo-picture-btn{grid-column:1/-1;width:100%}
+  .photo-picture-copy h3{font-size:19px}
+  .photo-picture-copy p{font-size:14px}
+}
+
+
+.pla-short{
+  margin-top:14px;padding:12px 15px;border:1px solid var(--line);
+  border-radius:14px;background:#fafbfc;color:#667085;
+  font-size:13px;line-height:1.45
+}
+.pla-short b{color:#202634;margin-right:6px}
+@media(max-width:760px){
+  .pla-short{font-size:12.5px;padding:11px 12px}
+  .pla-short b{display:block;margin:0 0 2px}
+}
+
+</style>
+
+<script type="application/ld+json" data-b3d-schema="website">{"@context":"https://schema.org","@type":"WebSite","name":"B3DPrint","description":"3D-печать на заказ из PLA: игрушки, фигурки, органайзеры и полезные детали.","inLanguage":"ru"}</script>
+<script type="application/ld+json" data-b3d-schema="organization">{"@context":"https://schema.org","@type":"Organization","name":"B3DPrint","description":"3D-печать изделий из PLA на заказ."}</script>
+</head>
+<body>
+<header>
+<div class="wrap nav">
+<a class="brand" href="#top"><span class="logo">3D</span><span>Печать на заказ</span></a>
+<nav>
+<a href="3d-pechat-na-zakaz/">Печать на заказ</a>
+<a href="catalog.html">Каталог игрушек</a>
+<a href="colors/">Цвета</a>
+<a href="#new-items">Новинки</a>
+<a href="#works">Примеры заказов</a>
+<a href="#video">Видео</a>
+<a href="#reviews">Отзывы</a>
+</nav>
+<a class="cta" href="order.html">Заказать</a>
+</div>
+</header>
+<main id="top">
+<section class="hero">
+<div class="wrap hero-grid">
+<div>
+<div class="kicker"> 3D-печать на заказ</div>
+<h1>Печать на заказ<br/>на <span>3D-принтере</span></h1>
+<p class="lead">Игрушки, фигурки, полезные детали и необычные вещи на заказ. Можно выбрать готовую модель из каталога или прислать свою идею.</p>
+<div class="hero-actions">
+<a class="cta" href="order.html">Хочу заказать</a>
+<a class="cta ghost" href="catalog.html">Смотреть каталог</a>
+</div>
+</div>
+<div class="hero-card">
+<img alt="3D-принтер с готовой деталью на столе" src="assets/hero-main-new.png"/>
+<div class="badges">
+<span class="badge">PLA-пластик</span>
+<span class="badge">Печать по вашей модели</span>
+<span class="badge">Игрушки и детали</span>
+</div>
+</div>
+</div>
+</section>
+<section id="order">
+<div class="wrap">
+<div class="section-head">
+<div><h2>Что можно выбрать</h2><p class="sub">Три простых варианта: заказать свою вещь, выбрать игрушку или посмотреть уже выполненные работы.</p></div>
+</div>
+<div class="choice-grid">
+<a class="choice" href="order.html"><div><div class="icon">🖨️</div><h3>Печать на заказ</h3><p>Пришлите картинку, идею или готовую 3D-модель в MAX, Telegram или WhatsApp.</p></div><strong>Оформить заказ →</strong></a>
+<a class="choice" href="catalog.html"><div><div class="icon">🧸</div><h3>Каталог игрушек</h3><p>Готовые модели игрушек и необычных предметов, которые можно напечатать.</p></div><strong>Открыть каталог →</strong></a>
+<a class="choice" href="#works"><div><div class="icon">📸</div><h3>Примеры заказов</h3><p>Реальные вещи, которые уже были напечатаны на 3D-принтере.</p></div><strong>Посмотреть работы →</strong></a>
+</div>
+</div>
+</section>
+
+<section class="pla-colors" id="colors">
+  <div class="wrap">
+    <div class="pla-colors-head">
+      <div>
+        <div class="pla-colors-kicker">Цвет изделия</div>
+        <h2>Можете выбрать цвет</h2>
+        <p>Печатаю из PLA разных цветов. Нажмите на понравившуюся катушку — откроется отдельная страница с выбранным цветом.</p>
+      </div>
+      <div class="pla-colors-note">Оттенок на экране может немного отличаться от пластика вживую.</div>
+    </div>
+    <div class="pla-colors-grid">
+      <a class="pla-color-card" href="colors/?color=green" aria-label="Открыть цвет Зелёный"><div class="pla-color-photo"><img src="assets/pla-colors/green.webp" alt="Зелёный PLA" loading="lazy"></div><div class="pla-color-name">Зелёный</div></a>
+<a class="pla-color-card" href="colors/?color=gray" aria-label="Открыть цвет Серый"><div class="pla-color-photo"><img src="assets/pla-colors/gray.webp" alt="Серый PLA" loading="lazy"></div><div class="pla-color-name">Серый</div></a>
+<a class="pla-color-card" href="colors/?color=beige-pink" aria-label="Открыть цвет Бежево-розовый"><div class="pla-color-photo"><img src="assets/pla-colors/beige-pink.webp" alt="Бежево-розовый PLA" loading="lazy"></div><div class="pla-color-name">Бежево-розовый</div></a>
+<a class="pla-color-card" href="colors/?color=black" aria-label="Открыть цвет Чёрный"><div class="pla-color-photo"><img src="assets/pla-colors/black.webp" alt="Чёрный PLA" loading="lazy"></div><div class="pla-color-name">Чёрный</div></a>
+<a class="pla-color-card" href="colors/?color=white" aria-label="Открыть цвет Белый"><div class="pla-color-photo"><img src="assets/pla-colors/white.webp" alt="Белый PLA" loading="lazy"></div><div class="pla-color-name">Белый</div></a>
+<a class="pla-color-card" href="colors/?color=orange" aria-label="Открыть цвет Оранжевый"><div class="pla-color-photo"><img src="assets/pla-colors/orange.webp" alt="Оранжевый PLA" loading="lazy"></div><div class="pla-color-name">Оранжевый</div></a>
+<a class="pla-color-card" href="colors/?color=brown" aria-label="Открыть цвет Коричневый"><div class="pla-color-photo"><img src="assets/pla-colors/brown.webp" alt="Коричневый PLA" loading="lazy"></div><div class="pla-color-name">Коричневый</div></a>
+<a class="pla-color-card" href="colors/?color=blue" aria-label="Открыть цвет Синий"><div class="pla-color-photo"><img src="assets/pla-colors/blue.webp" alt="Синий PLA" loading="lazy"></div><div class="pla-color-name">Синий</div></a>
+<a class="pla-color-card" href="colors/?color=red" aria-label="Открыть цвет Красный"><div class="pla-color-photo"><img src="assets/pla-colors/red.webp" alt="Красный PLA" loading="lazy"></div><div class="pla-color-name">Красный</div></a>
+<a class="pla-color-card" href="colors/?color=light-blue" aria-label="Открыть цвет Голубой"><div class="pla-color-photo"><img src="assets/pla-colors/light-blue.webp" alt="Голубой PLA" loading="lazy"></div><div class="pla-color-name">Голубой</div></a>
+<a class="pla-color-card" href="colors/?color=beige" aria-label="Открыть цвет Бежевый"><div class="pla-color-photo"><img src="assets/pla-colors/beige.webp" alt="Бежевый PLA" loading="lazy"></div><div class="pla-color-name">Бежевый</div></a>
+<a class="pla-color-card" href="colors/?color=yellow" aria-label="Открыть цвет Жёлтый"><div class="pla-color-photo"><img src="assets/pla-colors/yellow.webp" alt="Жёлтый PLA" loading="lazy"></div><div class="pla-color-name">Жёлтый</div></a>
+    </div>
+
+    <div class="pla-short">
+      <b>Что такое PLA-пластик?</b>
+      <span>Твёрдый и лёгкий пластик для игрушек и домашних вещей. Хорошо держит форму, но не любит сильный нагрев.</span>
+    </div>
+</div>
+</section>
+
+<section id="catalog">
+<div class="wrap">
+<div class="material">
+<div>
+<b>Каталог игрушек теперь на отдельной странице</b>
+<p>Каждая игрушка показана отдельно.</p>
+</div>
+<a class="cta" href="catalog.html">Открыть каталог</a>
+<div style="margin-top:12px;display:flex;gap:12px;flex-wrap:wrap;font-size:14px">
+<a href="igrushki/" style="color:#d85f12;font-weight:800">Игрушки →</a>
+<a href="gibkie-igrushki/" style="color:#d85f12;font-weight:800">Гибкие игрушки →</a>
+<a href="dlya-doma/" style="color:#d85f12;font-weight:800">Для дома →</a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="quick-modeling" aria-label="Быстрый ответ и моделирование">
+  <div class="wrap">
+    <div class="quick-modeling-card">
+      <div class="quick-modeling-icon">⚡</div>
+      <div>
+        <h2>Быстро отвечаю и могу смоделировать простую деталь</h2>
+        <p><b>Обычно отвечаю в течение 5 минут.</b> Иногда, если занят, ответ может занять несколько часов. Простые изделия могу быстро смоделировать по фото, размерам или вашему описанию. За сложное 3D-моделирование не берусь.</p>
+      </div>
+    </div>
+</div>
+</section>
+
+<section id="new-items">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2>Новинки</h2>
+        <p class="sub">Здесь показываются товары, опубликованные за последние 3 дня. Дата публикации указана на каждой карточке.</p>
+      </div>
+    </div>
+    <div class="new-items-grid" id="newItemsGrid">
+      <a class="new-item-card" data-published="2026-10-03" href="catalog/chashka-kofe/">
+        <div class="new-item-image"><img src="assets/catalog/coffee-cup.webp" alt="Чашка кофе" loading="lazy"></div>
+        <div class="new-item-body">
+          <div class="new-item-date" data-date-label="2026-10-03"></div>
+          <h3>Чашка кофе</h3>
+          <div class="new-item-bottom"><strong>500 ₽</strong><span>Открыть →</span></div>
+        </div>
+      </a>
+      <a class="new-item-card" data-published="2026-10-03" href="catalog/morozhenoe/">
+        <div class="new-item-image"><img src="assets/catalog/ice-cream.webp" alt="Мороженое" loading="lazy"></div>
+        <div class="new-item-body">
+          <div class="new-item-date" data-date-label="2026-10-03"></div>
+          <h3>Мороженое</h3>
+          <div class="new-item-bottom"><strong>150 ₽</strong><span>Открыть →</span></div>
+        </div>
+      </a>
+      
+      <a class="new-item-card" data-published="2026-10-02" href="catalog/derzhatel-dlya-provodov/">
+        <div class="new-item-image"><img src="assets/catalog/pet-food-pouch-organizer.webp" alt="Органайзер для пакетиков корма" loading="lazy"></div>
+        <div class="new-item-body">
+          <div class="new-item-date" data-date-label="2026-10-02"></div>
+          <h3>Органайзер для пакетиков корма</h3>
+          <div class="new-item-bottom"><strong>900 ₽</strong><span>Открыть →</span></div>
+        </div>
+      </a>
+      <a class="new-item-card" data-published="2026-10-02" href="catalog.html#home">
+        <div class="new-item-image"><img src="assets/catalog/tea-bag-organizer.webp" alt="Органайзер для чайных пакетиков" loading="lazy"></div>
+        <div class="new-item-body">
+          <div class="new-item-date" data-date-label="2026-10-02"></div>
+          <h3>Органайзер для чайных пакетиков</h3>
+          <div class="new-item-bottom"><strong>500 ₽</strong><span>Открыть →</span></div>
+        </div>
+      </a>
+      <a class="new-item-card" data-published="2026-10-02" href="catalog.html#home">
+        <div class="new-item-image"><img src="assets/catalog/sponge-holder.webp" alt="Подставка для кухонной губки" loading="lazy"></div>
+        <div class="new-item-body">
+          <div class="new-item-date" data-date-label="2026-10-02"></div>
+          <h3>Подставка для кухонной губки</h3>
+          <div class="new-item-bottom"><strong>300 ₽</strong><span>Открыть →</span></div>
+        </div>
+      </a>
+      <a class="new-item-card" data-published="2026-10-02" href="catalog.html#home">
+        <div class="new-item-image"><img src="assets/catalog/toothbrush-organizer.webp" alt="Органайзер для зубных щёток" loading="lazy"></div>
+        <div class="new-item-body">
+          <div class="new-item-date" data-date-label="2026-10-02"></div>
+          <h3>Органайзер для зубных щёток</h3>
+          <div class="new-item-bottom"><strong>450 ₽</strong><span>Открыть →</span></div>
+        </div>
+      </a>
+      <a class="new-item-card" data-published="2026-10-02" href="catalog.html#home">
+        <div class="new-item-image"><img src="assets/catalog/cotton-pad-swab-organizer.webp" alt="Органайзер для ватных дисков и палочек" loading="lazy"></div>
+        <div class="new-item-body">
+          <div class="new-item-date" data-date-label="2026-10-02"></div>
+          <h3>Органайзер для ватных дисков и палочек</h3>
+          <div class="new-item-bottom"><strong>300 ₽</strong><span>Открыть →</span></div>
+        </div>
+      </a>
+      <a class="new-item-card" data-published="2026-10-02" href="catalog.html#home">
+        <div class="new-item-image"><img src="assets/catalog/phone-stand.webp" alt="Подставка для телефона" loading="lazy"></div>
+        <div class="new-item-body">
+          <div class="new-item-date" data-date-label="2026-10-02"></div>
+          <h3>Подставка для телефона</h3>
+          <div class="new-item-bottom"><strong>150 ₽</strong><span>Открыть →</span></div>
+        </div>
+      </a>
+      <a class="new-item-card" data-published="2026-10-02" href="catalog.html#home">
+        <div class="new-item-image"><img src="assets/catalog/cable-holder.webp" alt="Держатель для проводов" loading="lazy"></div>
+        <div class="new-item-body">
+          <div class="new-item-date" data-date-label="2026-10-02"></div>
+          <h3>Держатель для проводов</h3>
+          <div class="new-item-bottom"><strong>150 ₽</strong><span>Открыть →</span></div>
+        </div>
+      </a>
+      <a class="new-item-card" data-published="2026-10-01" href="catalog.html#other">
+        <div class="new-item-image"><img src="assets/catalog/gyro.png" alt="Гироскоп-антистресс" loading="lazy"></div>
+        <div class="new-item-body">
+          <div class="new-item-date" data-date-label="2026-10-01"></div>
+          <h3>Гироскоп-антистресс</h3>
+          <div class="new-item-bottom"><strong>100 ₽</strong><span>Открыть →</span></div>
+        </div>
+      </a>
+      <a class="new-item-card" data-published="2026-10-01" href="catalog.html#other">
+        <div class="new-item-image"><img src="assets/catalog/infinity-cube.png" alt="Кубик-антистресс" loading="lazy"></div>
+        <div class="new-item-body">
+          <div class="new-item-date" data-date-label="2026-10-01"></div>
+          <h3>Кубик-антистресс</h3>
+          <div class="new-item-bottom"><strong>200 ₽</strong><span>Открыть →</span></div>
+        </div>
+      </a>
+      <a class="new-item-card" data-published="2026-10-01" href="catalog.html#other">
+        <div class="new-item-image"><img src="assets/catalog/fidget-board.png" alt="Фиджет-панель" loading="lazy"></div>
+        <div class="new-item-body">
+          <div class="new-item-date" data-date-label="2026-10-01"></div>
+          <h3>Фиджет-панель</h3>
+          <div class="new-item-bottom"><strong>600 ₽</strong><span>Открыть →</span></div>
+        </div>
+      </a>
+    </div>
+    <div class="new-items-empty" id="newItemsEmpty" hidden>За последние 3 дня новых товаров пока нет.</div>
+  </div>
+</section>
+
+<section class="find-model">
+  <div class="wrap">
+    <div class="find-model-card">
+      <div class="find-model-copy">
+        <div class="find-model-kicker">Не нашли нужное в каталоге?</div>
+        <h2>Можно напечатать и другую модель</h2>
+        <p>Если у вас уже есть файл модели — просто пришлите его мне в сообщения. Если файла нет, можно найти подходящую модель на MakerWorld, а потом отправить мне ссылку.</p>
+      </div>
+      <a class="find-model-btn" href="https://makerworld.com/" target="_blank" rel="noopener noreferrer">Найти свою модель →</a>
+    </div>
+  </div>
+</section>
+<section id="works">
+<div class="wrap">
+<div class="section-head">
+<div>
+<h2>Примеры выполненных работ</h2>
+<p class="sub">Реальные изделия и процесс печати. Фотографии оформлены в одном светлом стиле, чтобы сами работы были заметнее.</p>
+</div>
+</div>
+<div class="portfolio">
+<article class="photo">
+<img alt="3D-печатный органайзер" src="assets/organizer-pro.png"/>
+<div class="cap"><b>Органайзер для мелочей</b>Большой набор секций для удобного хранения.</div>
+</article>
+<article class="photo">
+<img alt="Декоративные буквы HOME" src="assets/home-pro.png"/>
+<div class="cap"><b>Декоративные буквы HOME</b>Интерьерная печать из PLA-пластика.</div>
+</article>
+<article class="photo">
+<img alt="Функциональные детали" src="assets/details-pro.png"/>
+<div class="cap"><b>Функциональные детали</b>Печать полезных деталей под конкретную задачу.</div>
+</article>
+<article class="photo">
+<img alt="Процесс 3D-печати на принтере" src="assets/printer-pro.png"/>
+<div class="cap"><b>Печать на 3D-принтере</b>Так выглядит готовая деталь прямо на столе принтера.</div>
+</article>
+<article class="photo">
+<img alt="Напечатанные крепления и небольшие полезные детали" loading="lazy" src="assets/works/primer-raboty-3d-krepleniya.jpg"/>
+<div class="cap"><b>Органайзер для мелочей</b>Большой набор секций для удобного хранения.</div>
+</article><article class="photo">
+<img alt="Декоративные подвески и небольшие фигурные детали" loading="lazy" src="assets/works/primer-raboty-3d-podveski.jpg"/>
+<div class="cap"><b>Органайзер для мелочей</b>Большой набор секций для удобного хранения.</div>
+</article></div>
+</div>
+</section>
+
+<section id="reviews">
+<div class="wrap">
+  <div class="section-head">
+    <div><h2>Отзывы покупателей</h2><p class="sub">Здесь можно оставить настоящий отзыв — после отправки он появится на сайте.</p></div>
+  </div>
+  <div class="reviews-shell">
+    <article class="review-form-card">
+      <h3>Оставить отзыв</h3>
+      <p class="review-help">Расскажите, что заказывали и как вам результат. Номер телефона и почта не нужны.</p>
+      <form class="review-form" id="reviewForm">
+        <div class="review-field"><label for="reviewName">Ваше имя</label><input id="reviewName" name="name" maxlength="40" autocomplete="name" required placeholder="Например, Анна"></div>
+        <div class="review-field"><label for="reviewProduct">Что заказывали?</label><input id="reviewProduct" name="product" maxlength="80" placeholder="Например, подставку для телефона"></div>
+        <div>
+          <div class="rating-label">Ваша оценка</div>
+          <div class="rating-input" aria-label="Оценка от 1 до 5">
+            <input type="radio" id="star5" name="rating" value="5" required><label for="star5" title="5 из 5">★</label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 из 5">★</label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 из 5">★</label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 из 5">★</label>
+            <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 из 5">★</label>
+          </div>
+        </div>
+        <div class="review-field">
+  <label for="reviewText">Отзыв <span style="font-weight:400;color:#8a91a1">(необязательно)</span></label>
+  <textarea id="reviewText" name="text" maxlength="1000" placeholder="Если хотите — напишите пару слов"></textarea>
+</div>
+<div class="review-field review-photo-field">
+  <label for="reviewPhoto">Фото <span class="review-optional">(необязательно)</span></label>
+  <input id="reviewPhoto" name="photo" type="file" accept="image/jpeg,image/png,image/webp">
+  <div class="review-photo-help">Можно добавить JPG, PNG или WebP до 3 МБ.</div>
+  <div class="review-photo-preview" id="reviewPhotoPreview" hidden>
+    <img id="reviewPhotoPreviewImg" alt="Предпросмотр фотографии к отзыву">
+    <button type="button" id="reviewPhotoRemove">Убрать фото</button>
+  </div>
+</div>
+        <div class="review-honeypot" aria-hidden="true"><label>Сайт<input name="website" tabindex="-1" autocomplete="off"></label></div>
+        <button class="cta review-submit" id="reviewSubmit" type="submit">Опубликовать отзыв</button>
+        <div class="review-status" id="reviewStatus" aria-live="polite"></div>
+        
+      </form>
+    </article>
+    <article class="reviews-list-card">
+      <div class="reviews-summary">
+        <div><div class="reviews-score" id="reviewsScore">— <small>из 5</small></div><div class="reviews-stars" id="reviewsStars">☆☆☆☆☆</div></div>
+        <div class="review-help" id="reviewsCount" style="margin:0">Загрузка отзывов…</div>
+      </div>
+      <div class="reviews-list" id="reviewsList"><div class="review-loading">Загружаю отзывы…</div></div>
+    </article>
+  </div>
+</div>
+</section>
+
+
+<section id="video">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2>Видео и таймлапсы</h2>
+        <p class="sub">Реальные ролики с печати — можно посмотреть, как изделие появляется слой за слоем.</p>
+      </div>
+    </div>
+    <div class="videos videos-three">
+      <article class="video-card video-card-live">
+        <video controls playsinline preload="metadata">
+          <source src="assets/timelapse-1.mp4" type="video/mp4">
+          Ваш браузер не поддерживает видео.
+        </video>
+        <div class="video-caption"><b>Таймлапс печати №1</b><span>Реальный процесс 3D-печати</span></div>
+      </article>
+      <article class="video-card video-card-live">
+        <video controls playsinline preload="metadata">
+          <source src="assets/timelapse-2.mp4" type="video/mp4">
+          Ваш браузер не поддерживает видео.
+        </video>
+        <div class="video-caption"><b>Таймлапс печати №2</b><span>Печать изделия слой за слоем</span></div>
+      </article>
+      <article class="video-card video-card-live">
+        <video controls playsinline preload="metadata">
+          <source src="assets/timelapse-3.mp4" type="video/mp4">
+          Ваш браузер не поддерживает видео.
+        </video>
+        <div class="video-caption"><b>Таймлапс печати №3</b><span>Как проходит изготовление на 3D-принтере</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+<div class="wrap">
+<div class="section-head"><div><h2>Как сделать заказ</h2></div></div>
+<div class="steps">
+<div class="step"><h3>Выберите</h3><p>Игрушку из каталога или пришлите свою идею.</p></div>
+<div class="step"><h3>Обсудим</h3><p>Определим размер, цвет и другие детали.</p></div>
+<div class="step"><h3>Печатаю</h3><p>Запускаю модель на 3D-принтере.</p></div>
+<div class="step"><h3>Получаете</h3><p>Готовое изделие передаётся или отправляется вам.</p></div>
+</div>
+</div>
+</section>
+<section id="contact">
+<div class="wrap">
+<div class="contact">
+<div>
+<h2>Хотите что-нибудь напечатать?</h2>
+<p>Нажмите «Заказать» и выберите MAX, Telegram или WhatsApp.</p>
+</div>
+<a class="cta" href="order.html">Заказать</a>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">Печать на заказ на 3D-принтере · Печать на заказ на 3D-принтере</div>
+</footer>
+
+<script>
+(() => {
+  const endpoint = '/api/reviews';
+  const form = document.getElementById('reviewForm');
+  const list = document.getElementById('reviewsList');
+  const score = document.getElementById('reviewsScore');
+  const stars = document.getElementById('reviewsStars');
+  const count = document.getElementById('reviewsCount');
+  const status = document.getElementById('reviewStatus');
+  const submit = document.getElementById('reviewSubmit');
+  const photoInput = document.getElementById('reviewPhoto');
+  const photoPreview = document.getElementById('reviewPhotoPreview');
+  const photoPreviewImg = document.getElementById('reviewPhotoPreviewImg');
+  const photoRemove = document.getElementById('reviewPhotoRemove');
+
+  const allowedPhotoTypes = new Set(['image/jpeg','image/png','image/webp']);
+  const maxPhotoSize = 3 * 1024 * 1024;
+  let previewUrl = '';
+
+  const starText = rating => '★'.repeat(Math.max(0, rating)) + '☆'.repeat(Math.max(0, 5-rating));
+  const plural = n => {
+    const m10=n%10,m100=n%100;
+    if(m10===1 && m100!==11) return 'отзыв';
+    if(m10>=2 && m10<=4 && !(m100>=12 && m100<=14)) return 'отзыва';
+    return 'отзывов';
+  };
+  const formatDate = iso => {
+    try { return new Intl.DateTimeFormat('ru-RU',{day:'numeric',month:'long',year:'numeric'}).format(new Date(iso)); }
+    catch { return ''; }
+  };
+
+  function clearPhotoPreview(clearInput=false){
+    if(previewUrl){ URL.revokeObjectURL(previewUrl); previewUrl=''; }
+    if(photoPreviewImg) photoPreviewImg.removeAttribute('src');
+    if(photoPreview) photoPreview.hidden=true;
+    if(clearInput && photoInput) photoInput.value='';
+  }
+
+  if(photoInput){
+    photoInput.addEventListener('change', ()=>{
+      clearPhotoPreview(false);
+      const file=photoInput.files && photoInput.files[0];
+      if(!file) return;
+      if(!allowedPhotoTypes.has(file.type)){
+        if(status){ status.className='review-status err'; status.textContent='Фото должно быть JPG, PNG или WebP.'; }
+        clearPhotoPreview(true); return;
+      }
+      if(file.size > maxPhotoSize){
+        if(status){ status.className='review-status err'; status.textContent='Фото слишком большое. Максимум 3 МБ.'; }
+        clearPhotoPreview(true); return;
+      }
+      if(status){ status.className='review-status'; status.textContent=''; }
+      previewUrl=URL.createObjectURL(file);
+      photoPreviewImg.src=previewUrl;
+      photoPreview.hidden=false;
+    });
+  }
+  if(photoRemove) photoRemove.addEventListener('click', ()=>clearPhotoPreview(true));
+
+  function render(reviews){
+    if(!reviews.length){
+      score.innerHTML='— <small>из 5</small>';
+      stars.textContent='☆☆☆☆☆';
+      count.textContent='Пока нет отзывов';
+      list.innerHTML='<div class="review-empty"><b>Будьте первым 🙂</b><br>После отправки ваш отзыв появится здесь.</div>';
+      return;
+    }
+    const avg = reviews.reduce((s,r)=>s+Number(r.rating||0),0)/reviews.length;
+    score.innerHTML=`${avg.toFixed(1).replace('.',',')} <small>из 5</small>`;
+    stars.textContent=starText(Math.round(avg));
+    count.textContent=`${reviews.length} ${plural(reviews.length)}`;
+    list.replaceChildren();
+
+    reviews.forEach(r=>{
+      const item=document.createElement('div'); item.className='review-item';
+      const top=document.createElement('div'); top.className='review-top';
+      const left=document.createElement('div');
+      const name=document.createElement('div'); name.className='review-name'; name.textContent=r.name;
+      const st=document.createElement('div'); st.className='reviews-stars'; st.textContent=starText(Number(r.rating));
+      left.append(name,st);
+      const date=document.createElement('div'); date.className='review-date'; date.textContent=formatDate(r.createdAt);
+      top.append(left,date); item.append(top);
+
+      if(r.product){
+        const product=document.createElement('span');
+        product.className='review-product'; product.textContent=r.product; item.append(product);
+      }
+      if(r.text){
+        const body=document.createElement('p');
+        body.className='review-text'; body.textContent=r.text; item.append(body);
+      }
+      if(r.photoUrl){
+        const link=document.createElement('a');
+        link.href=r.photoUrl; link.target='_blank'; link.rel='noopener';
+        const img=document.createElement('img');
+        img.className='review-photo'; img.src=r.photoUrl; img.alt='Фото к отзыву '+r.name; img.loading='lazy';
+        link.append(img); item.append(link);
+      }
+      list.append(item);
+    });
+  }
+
+  async function loadReviews(){
+    try{
+      const res=await fetch(endpoint,{headers:{'Accept':'application/json'},cache:'no-store'});
+      if(!res.ok) throw new Error('load');
+      const data=await res.json(); render(Array.isArray(data.reviews)?data.reviews:[]);
+    }catch(e){
+      score.innerHTML='— <small>из 5</small>'; stars.textContent='☆☆☆☆☆'; count.textContent='';
+      list.innerHTML='';
+    }
+  }
+
+  form.addEventListener('submit', async e=>{
+    e.preventDefault();
+
+    const file=photoInput && photoInput.files ? photoInput.files[0] : null;
+    if(file){
+      if(!allowedPhotoTypes.has(file.type)){
+        status.className='review-status err'; status.textContent='Фото должно быть JPG, PNG или WebP.'; return;
+      }
+      if(file.size > maxPhotoSize){
+        status.className='review-status err'; status.textContent='Фото слишком большое. Максимум 3 МБ.'; return;
+      }
+    }
+
+    status.className='review-status'; status.textContent='Отправляю…'; submit.disabled=true;
+    const fd=new FormData(form);
+
+    try{
+      const res=await fetch(endpoint,{
+        method:'POST',
+        headers:{'Accept':'application/json'},
+        body:fd
+      });
+      const data=await res.json().catch(()=>({}));
+      if(!res.ok) throw new Error(data.error||'Не получилось отправить отзыв. Попробуйте ещё раз.');
+      status.className='review-status ok'; status.textContent='Спасибо! Отзыв опубликован.';
+      form.reset(); clearPhotoPreview(false); await loadReviews();
+    }catch(err){
+      status.className='review-status err'; status.textContent=err.message||'Не получилось отправить отзыв.';
+    }finally{
+      submit.disabled=false;
+    }
+  });
+
+  loadReviews();
+})();
+</script>
+
+
+<button class="back-to-top" id="backToTop" type="button" aria-label="Наверх" title="Наверх">
+  <span aria-hidden="true">↑</span>
+</button>
+
+
+<script>
+(function(){
+  const button = document.getElementById('backToTop');
+  if (!button) return;
+
+  function updateBackToTop(){
+    // Показываем стрелку после заметной прокрутки вниз.
+    button.classList.toggle('is-visible', window.scrollY > 500);
+  }
+
+  window.addEventListener('scroll', updateBackToTop, {passive:true});
+  updateBackToTop();
+
+  button.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+})();
+</script>
+
+
+<script>
+(function(){
+  const cards = Array.from(document.querySelectorAll('.new-item-card[data-published]'));
+  const empty = document.getElementById('newItemsEmpty');
+  if (!cards.length) return;
+
+  const today = new Date();
+  today.setHours(0,0,0,0);
+  let visible = 0;
+
+  cards.forEach(function(card){
+    const raw = card.dataset.published;
+    const parts = raw.split('-').map(Number);
+    const published = new Date(parts[0], parts[1]-1, parts[2]);
+    published.setHours(0,0,0,0);
+
+    const ageDays = Math.floor((today - published) / 86400000);
+    const isRecent = ageDays >= 0 && ageDays < 3;
+    card.hidden = !isRecent;
+
+    const label = card.querySelector('[data-date-label]');
+    if (label){
+      label.textContent = 'Опубликовано ' + published.toLocaleDateString('ru-RU', {
+        day:'numeric', month:'long', year:'numeric'
+      });
+    }
+    if (isRecent) visible++;
+  });
+
+  if (empty) empty.hidden = visible !== 0;
+})();
+</script>
+
+
+<script>
+(function () {
+  if (window.location.protocol !== 'file:') return;
+  document.querySelectorAll('a[href]').forEach(function (link) {
+    var href = link.getAttribute('href');
+    if (!href) return;
+    if (/^(https?:|mailto:|tel:|#|javascript:)/i.test(href)) return;
+
+    var hash = '';
+    var query = '';
+    var base = href;
+
+    var hashPos = base.indexOf('#');
+    if (hashPos !== -1) {
+      hash = base.slice(hashPos);
+      base = base.slice(0, hashPos);
+    }
+    var queryPos = base.indexOf('?');
+    if (queryPos !== -1) {
+      query = base.slice(queryPos);
+      base = base.slice(0, queryPos);
+    }
+
+    if (base.endsWith('/')) {
+      link.setAttribute('href', base + 'index.html' + query + hash);
+    }
+  });
+})();
+</script>
+
+
+</body>
+</html>

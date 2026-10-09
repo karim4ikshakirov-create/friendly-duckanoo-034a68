@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /api/
+Disallow: /.netlify/
+
+Sitemap: https://gentle-chebakia-812269.netlify.app/sitemap.xml

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Закажите 3D-печать из PLA: выберите изделие из каталога или пришлите свою модель, ссылку, фото, размеры или описание.">
+<title>Заказать 3D-печать из PLA | B3DPrint</title>
+<link rel="canonical" href="https://gentle-chebakia-812269.netlify.app/order.html">
+<style>
+:root{
+  --bg:#f7f7f4;--surface:#fff;--text:#1e2430;--muted:#687083;
+  --accent:#ff7a21;--accent2:#ff9c5c;--line:#e7e8ec;
+  --shadow:0 18px 50px rgba(32,42,60,.10);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  background:
+    radial-gradient(circle at 8% 0%,rgba(255,122,33,.10),transparent 24%),
+    radial-gradient(circle at 100% 8%,rgba(61,114,242,.07),transparent 22%),
+    var(--bg);
+  color:var(--text);
+}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px}
+header{
+  position:sticky;top:0;z-index:10;background:rgba(255,255,255,.9);
+  backdrop-filter:blur(14px);border-bottom:1px solid rgba(30,36,48,.08)
+}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:850}
+.logo{
+  width:42px;height:42px;border-radius:14px;background:linear-gradient(145deg,#ff7a21,#ffb36f);
+  display:grid;place-items:center;color:#fff;font-weight:900;box-shadow:0 10px 25px rgba(255,122,33,.25)
+}
+.back{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 16px;font-weight:800}
+main{padding:62px 0 80px}
+.kicker{color:var(--accent);font-weight:850;margin-bottom:10px}
+h1{font-size:clamp(38px,6vw,64px);letter-spacing:-2.4px;line-height:1.02;margin:0 0 14px}
+.lead{font-size:18px;color:var(--muted);line-height:1.55;max-width:720px}
+.product-box{
+  margin:28px 0 18px;background:#fff;border:1px solid var(--line);
+  border-radius:22px;padding:20px 22px;box-shadow:0 10px 30px rgba(39,45,63,.06)
+}
+.product-box small{display:block;color:var(--muted);margin-bottom:5px}
+.product-name{font-size:22px;font-weight:900}
+.product-price{margin-top:6px;color:var(--accent);font-weight:900;font-size:20px}
+.contact-card{
+  background:#fff;border:1px solid var(--line);border-radius:28px;padding:28px;
+  box-shadow:var(--shadow)
+}
+.contact-card h2{font-size:28px;margin:0 0 8px}
+.contact-card p{margin:0 0 22px;color:var(--muted)}
+.buttons{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.contact-btn{
+  min-height:74px;border-radius:18px;display:flex;align-items:center;justify-content:center;
+  font-size:18px;font-weight:900;border:1px solid var(--line);background:#fff;
+  transition:.2s;box-shadow:0 8px 20px rgba(39,45,63,.05)
+}
+.contact-btn:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(39,45,63,.10)}
+.max{background:linear-gradient(135deg,#edf4ff,#ffffff)}
+.telegram{background:linear-gradient(135deg,#eef8ff,#ffffff)}
+.whatsapp{background:linear-gradient(135deg,#effcf3,#ffffff)}
+.note{
+  margin-top:18px;padding:14px 16px;border-radius:14px;
+  background:#fff6ec;border:1px solid #f2dfcc;color:#675b50;font-size:14px
+}
+@media(max-width:650px){
+  .wrap{padding:0 15px}.nav{height:64px}.buttons{grid-template-columns:1fr}
+  h1{letter-spacing:-1.6px}.contact-card{padding:20px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><span class="logo">3D</span><span>Печать на заказ</span></a>
+    <a class="back" href="index.html">← На главную</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="kicker">ЗАКАЗ</div>
+    <h1>Напишите мне</h1>
+    <p class="lead">Оформления заказа прямо на сайте больше нет. Заказ можно сделать только через MAX, Telegram или WhatsApp.</p>
+
+    <div class="product-box" id="productBox" style="display:none">
+      <small>Вы выбрали</small>
+      
+      
+      
+    </div>
+
+    <div class="contact-card">
+      <h2>Куда вам удобнее написать?</h2>
+      <p>Выберите мессенджер и напишите, какую игрушку или деталь хотите заказать.</p>
+
+      <div class="buttons">
+        <a class="contact-btn max" href="https://max.ru/u/f9LHodD0cOLbd6uttd6EgXbkGRRP-HKkKWz0xFKKAdNgMQ71D6nMt0mxQMQ" target="_blank" rel="noopener">MAX</a>
+        <a class="contact-btn telegram" href="https://t.me/B3DPrint" target="_blank" rel="noopener">Telegram</a>
+        <a class="contact-btn whatsapp" id="waLink" href="https://wa.me/79600451204" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+
+      
+    </div>
+  </div>
+</main>
+
+<script>
+const params = new URLSearchParams(location.search);
+const product = params.get('product');
+const price = params.get('price');
+const color = params.get('color');
+
+if (product) {
+  document.getElementById('productBox').style.display = 'block';
+  document.getElementById('productName').textContent = product;
+  if (price) document.getElementById('productPrice').textContent = price + ' ₽';
+  if (color) document.getElementById('productColor').textContent = 'Цвет: ' + color;
+
+  const msg = 'Здравствуйте! Хочу заказать: ' + product + (price ? ' (' + price + ' ₽)' : '') + (color ? ', цвет: ' + color : '');
+  document.getElementById('waLink').href =
+    'https://wa.me/79600451204?text=' + encodeURIComponent(msg);
+}
+</script>
+
+<script>
+(function () {
+  if (window.location.protocol !== 'file:') return;
+  document.querySelectorAll('a[href]').forEach(function (link) {
+    var href = link.getAttribute('href');
+    if (!href) return;
+    if (/^(https?:|mailto:|tel:|#|javascript:)/i.test(href)) return;
+
+    var hash = '';
+    var query = '';
+    var base = href;
+
+    var hashPos = base.indexOf('#');
+    if (hashPos !== -1) {
+      hash = base.slice(hashPos);
+      base = base.slice(0, hashPos);
+    }
+    var queryPos = base.indexOf('?');
+    if (queryPos !== -1) {
+      query = base.slice(queryPos);
+      base = base.slice(0, queryPos);
+    }
+
+    if (base.endsWith('/')) {
+      link.setAttribute('href', base + 'index.html' + query + hash);
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
